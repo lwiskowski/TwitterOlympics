@@ -51,6 +51,7 @@ bolt = getFreq('usainbolt_tweets.csv')
 random_ppl = getFreq('random_tweets.csv')
 print(random_ppl)
 
+mlt.style.use('ggplot')
 mlt.plot(xaxis, phelps, 'b-', xaxis, random_ppl, 'r-')
 mlt.xticks(np.arange(0, 25, 2.0))
 mlt.yticks(np.arange(0, 350, 25.0))
